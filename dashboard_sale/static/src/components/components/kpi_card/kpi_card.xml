@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<templates xml:space="preserve">
+    <t t-name="dashboard_sale.KpiCard" owl="1">
+        <div class="col shadow-sm border m-2 p-4 bg-white">
+            <div class="d-flex align-items-center justify-content-between">
+                <h3 class="text-primary fw-bold" t-out="props.name"/>
+                <div class="px-3 py-1 bg-primary cursor-pointer" t-on-click="onClick">
+                    <span class="fa fa-arrow-right text-white"/>
+                </div>
+            </div>
+            <div class="d-flex align-items-center">
+                <h1 class="display-6 fw-bold m-0" t-out="props.value" t-att-style="valueStyle"/>
+                <span class="ms-2" t-if="props.percentage &amp;&amp; props.percentage > 0">
+                    <i class="fa fa-arrow-up text-success"/>
+                    <span class="text-success" t-out="props.percentage"/>%
+                </span>
+                <span class="ms-2" t-if="props.percentage &amp;&amp; props.percentage &lt; 0">
+                    <i class="fa fa-arrow-down text-danger"/>
+                    <span class="text-danger" t-out="Math.abs(props.percentage)"/>%
+                </span>
+            </div>
+            <div class="text-muted" t-if="props.previous">
+                Previous: <span t-out="props.previous"/>
+            </div>
+        </div>
+    </t>
+</templates>

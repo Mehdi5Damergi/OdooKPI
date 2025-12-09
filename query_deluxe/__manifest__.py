@@ -1,0 +1,29 @@
+{
+        'name': 'PostgreSQL Query Deluxe',
+        'description': 'Execute postgreSQL query into Odoo interface',
+        'author': 'Yvan Dotet',
+        'depends': ['base', 'mail'],
+        'application': True,
+        'version': '19.0.0.1',
+        'license': 'AGPL-3',
+        'support': 'yvandotet@yahoo.fr',
+        'website': 'https://github.com/YvanDotet/query_deluxe/',
+        'installable': True,
+
+        'data': [
+            'security/security.xml',
+            'security/ir.model.access.csv',
+
+            'views/querydeluxe.xml',
+
+            'wizard/pdforientation.xml',
+            'wizard/excelexport.xml',
+            'wizard/excelexport_model.xml',
+
+            'report/print_pdf.xml',
+
+            'datas/data.xml'
+            ],
+
+        'images': ['static/description/banner.gif']
+}

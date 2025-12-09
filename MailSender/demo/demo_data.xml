@@ -1,0 +1,14 @@
+<odoo>
+    <data noupdate="1">
+        <!-- Sample SMTP Configuration -->
+        <record id="smtp_gmail_demo" model="mail.sender.smtp">
+            <field name="name">Gmail SMTP</field>
+            <field name="host">smtp.gmail.com</field>
+            <field name="port">587</field>
+            <field name="username">your_email@gmail.com</field>
+            <field name="password">your_app_password</field>
+            <field name="encryption">starttls</field>
+            <field name="active">True</field>
+        </record>
+    </data>
+</odoo>

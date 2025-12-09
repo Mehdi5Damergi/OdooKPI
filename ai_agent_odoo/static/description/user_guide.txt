@@ -1,0 +1,34 @@
+AI Assistant User Guide
+=======================
+
+This module provides a floating chat widget that integrates with the OpenRouter API to provide AI assistance within Odoo. The assistant can access your local Odoo data to provide accurate and context-aware responses.
+
+Configuration:
+1. After installation, go to Settings > Technical > System Parameters
+2. Set the following parameters:
+   - ai_agent_odoo.service_url: https://openrouter.ai/api/v1/chat/completions
+   - ai_agent_odoo.api_key: [Your OpenRouter API key]
+
+Usage:
+1. Click on the AI Assistant icon in the bottom right corner of any Odoo page
+2. Type your question or request in the chat window
+3. The AI will respond with helpful information or perform actions as requested
+
+The AI Assistant can help with:
+- Answering questions about Odoo data (partners, products, sale orders)
+- Creating and updating records
+- Providing guidance on Odoo features
+- Assisting with common tasks
+
+Data Access:
+The AI Assistant can access the following types of data from your Odoo database:
+- Partners (customers, suppliers, contacts)
+- Products (inventory items, services)
+- Sale Orders (customer orders, quotations)
+
+When asking questions about your data, be specific about what information you need. For example:
+- "Show me the top 5 customers by sales"
+- "What products are low in stock?"
+- "List all pending sales orders"
+
+The AI will automatically retrieve relevant data from your Odoo database to provide accurate responses.

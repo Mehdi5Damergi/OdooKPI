@@ -1,0 +1,3 @@
+id,name,model_id:id,group_id:id,perm_read,perm_write,perm_create,perm_unlink
+access_auto_export_config,auto.export.config,model_auto_export_config,,1,1,1,1
+access_auto_export_config_field,auto.export.config.field,model_auto_export_config_field,,1,1,1,1

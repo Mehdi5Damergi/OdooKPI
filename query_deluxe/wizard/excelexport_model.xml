@@ -1,0 +1,9 @@
+<?xml version="1.0"?>
+
+<odoo>
+    <record id="model_excelexport" model="ir.model">
+        <field name="name">Excel Export</field>
+        <field name="model">excelexport</field>
+        <field name="transient" eval="True"/>
+    </record>
+</odoo>

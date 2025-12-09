@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<odoo>
+    <data noupdate="1">
+        <!-- Demo AI Agent Service Configuration -->
+        <record id="demo_ai_agent_service_url" model="ir.config_parameter">
+            <field name="key">ai_agent_odoo.service_url</field>
+            <field name="value">https://openrouter.ai/api/v1/chat/completions</field>
+        </record>
+
+        <record id="demo_ai_agent_api_key" model="ir.config_parameter">
+            <field name="key">ai_agent_odoo.api_key</field>
+            <field name="value">sk-or-v1-demo-key-for-testing-purposes-only</field>
+        </record>
+    </data>
+</odoo>

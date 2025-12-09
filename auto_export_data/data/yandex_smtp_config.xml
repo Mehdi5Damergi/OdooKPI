@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+    <data noupdate="1">
+        <!-- Yandex SMTP Configuration -->
+        <record id="yandex_smtp_server" model="ir.mail_server">
+            <field name="name">Yandex SMTP</field>
+            <field name="smtp_host">smtp.yandex.com</field>
+            <field name="smtp_port">587</field>
+            <field name="smtp_user">shop.2itelecom@yandex.com</field>
+            <field name="smtp_pass">dghybtgvbdfudifl</field>
+            <field name="smtp_encryption">starttls</field>
+            <field name="active">True</field>
+            <field name="sequence">10</field>
+        </record>
+    </data>
+</odoo>

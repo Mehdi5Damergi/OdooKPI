@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+    <data>
+        <record id="action_show_powerbi_dashboard_embedded" model="ir.actions.client">
+            <field name="name">Power BI Dashboard</field>
+            <field name="tag">powerbi_dashboard_embedded</field>
+            <field name="target">main</field>
+        </record>
+
+        <menuitem
+            id="menu_powerbi_dashboard_root"
+            name="Power BI"
+            sequence="150"/>
+
+        <menuitem
+            id="menu_powerbi_dashboard_item"
+            name="Dashboard"
+            parent="menu_powerbi_dashboard_root"
+            action="action_show_powerbi_dashboard_embedded"
+            sequence="10"/>
+    </data>
+</odoo>

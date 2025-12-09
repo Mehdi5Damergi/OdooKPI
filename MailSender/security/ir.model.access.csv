@@ -1,0 +1,3 @@
+id,name,model_id:id,group_id:id,perm_read,perm_write,perm_create,perm_unlink
+access_mail_sender_smtp,mail.sender.smtp,model_mail_sender_smtp,,1,1,1,1
+access_mail_sender,mail.sender,model_mail_sender,,1,1,1,1

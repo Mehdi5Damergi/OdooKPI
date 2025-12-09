@@ -1,0 +1,35 @@
+<odoo>
+    <record id="mail_template_auto_export_daily" model="mail.template">
+        <field name="name">Auto Export Daily</field>
+        <field name="model_id" ref="model_auto_export_config" />
+        <field name="subject">Daily Export: {{object.name}}</field>
+        <field name="body_html" type="html">
+            <p>Dear User,</p>
+            <p>
+                Your <b>
+                <t t-esc="object.interval_type" />
+            </b> scheduled export
+                <b>
+                <t t-esc="object.name" />
+            </b>
+                for model
+                <b>
+                <t t-esc="object.model_id.name" />
+            </b>
+                was generated on
+                <b>
+                <t t-esc="format_date(object.create_date)" />
+            </b>
+                .
+            </p>
+            <p>The exported data file is attached.</p>
+            <p>Best regards,
+                <br />
+                Odoo Automated Export System
+            </p>
+        </field>
+        <field name="email_from">shop.2itelecom@yandex.com</field>
+        <field name="reply_to">shop.2itelecom@yandex.com</field>
+        <field name="auto_delete" eval="True" />
+    </record>
+</odoo>

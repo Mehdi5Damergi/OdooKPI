@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<odoo>
+    <data noupdate="1">
+        <!-- Default AI Agent Configuration -->
+        <record id="default_ai_agent" model="ai.agent">
+            <field name="name">AI Assistant</field>
+            <field name="active">True</field>
+            <field name="service_url">https://openrouter.ai/api/v1/chat/completions</field>
+        </record>
+    </data>
+</odoo>

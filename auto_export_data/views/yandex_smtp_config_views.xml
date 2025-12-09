@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+    <data>
+        <!-- Action to open mail servers configuration -->
+        <record id="action_open_mail_servers" model="ir.actions.act_window">
+            <field name="name">Configure Yandex SMTP</field>
+            <field name="res_model">ir.mail_server</field>
+            <field name="view_mode">list,form</field>
+            <field name="domain">[('name', '=', 'Yandex SMTP')]</field>
+            <field name="help" type="html">
+                <p>Configure Yandex SMTP settings for the Auto Export Data module.</p>
+                <p>Click here to configure your Yandex SMTP server with the following settings:</p>
+                <ul>
+                    <li>SMTP Server: smtp.yandex.com</li>
+                    <li>Port: 587</li>
+                    <li>Connection Security: STARTTLS</li>
+                    <li>Username: shop.2itelecom@yandex.com</li>
+                    <li>Password: c9bf7819bb42ccc1b53199795f396ff0</li>
+                    <li>From Address: shop.2itelecom@yandex.com</li>
+                </ul>
+            </field>
+        </record>
+
+        <!-- Menu item for easy access to SMTP configuration -->
+        <menuitem id="menu_yandex_smtp_config" 
+                  name="Yandex SMTP Configuration" 
+                  parent="base.menu_administration" 
+                  action="action_open_mail_servers" 
+                  sequence="100"/>
+    </data>
+</odoo>
